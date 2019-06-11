@@ -1,11 +1,11 @@
 <div class="container">
 <form #formFeed ="ngForm">
   <div class="form-group">
-    <label for="animals">Feed Animals</label>
+    <label for="animals">Choose an animal to feed</label>
     <select class="form-control" id="animals" [ngModel]="type" [ngModelOptions]="{standalone:true}" (ngModelChange)="selected($event)" required>
       <option *ngFor="let animal of animals" [ngValue]="animal"> {{animal.type}}</option>
     </select>
-    <button class="btn btn-success btn-animals">Feed an Animal</button>
+    <button class="btn btn-success btn-animals">Feed</button>
   </div>
 </form>
 </div>

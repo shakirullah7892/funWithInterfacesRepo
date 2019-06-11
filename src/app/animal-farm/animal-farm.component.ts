@@ -4,6 +4,7 @@ import { Cow } from '../cow';
 import { Dog } from '../dog';
 import { Horse } from '../horse';
 import { Sheep } from '../sheep';
+import { Zebra } from '../zebra';
 import { IAnimal } from '../ianimal';
 
 @Component({
@@ -17,10 +18,11 @@ export class AnimalFarmComponent implements OnInit {
   dog: Dog = new Dog();
   horse: Horse = new Horse();
   sheep: Sheep = new Sheep();
+  zebra: Zebra = new Zebra();
   animals: Array<Object>;
 
   constructor() {
-    this.animals = [this.cat, this.cow, this.dog, this.horse, this.sheep];
+    this.animals = [this.cat, this.cow, this.dog, this.horse, this.sheep, this.zebra];
   }
 
   ngOnInit() {
